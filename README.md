@@ -18,9 +18,10 @@ Programming Style: Modular
  	 function createChildNode($ownerId, $nodeValue);
   ```
   
-  ### 4. Encryption And Decryption (in createNode.php):		
+  ### 4. Encryption And Decryption (in includes/encryptNode.php):		
  	 ```
-	 function createChildNode($ownerId, $nodeValue);
+	 function encrypt($Data);
+	 function decrypt($Data);
 	 ```
   ### 5. Verify owner node:
   	```
