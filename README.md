@@ -1,28 +1,51 @@
 # genesisNode
+```
 Language: PHP
 Database: Mysql
-Modular Programming
-To Execute run "index.php" file. Which contains following are the functions:
-  1. Create Genesis Node: 
-	  function createGenesisNode($ownername,$ownerId);
-  2. Create set of Child Nodes:
+Programming Style: Modular 
+```
+## To Execute run "index.php" file. Which contains following are the functions:
+  ### 1. Create Genesis Node:
+  	```
+	function createGenesisNode($ownername,$ownerId);
+ 	``` 	  
+  ### 2. Create set of Child Nodes:
+  ```
   	function createChildNode($ownerId, $nodeValue);
-  3. Create a child node of particular node:
+  ```
+  ### 3. Create a child node of particular node:
+  ```
  	 function createChildNode($ownerId, $nodeValue);
-  4. Encryption And Decryption (in createNode.php):		
- 	 function createChildNode($ownerId, $nodeValue);
-  5. Verify owner node: 
+  ```
+  
+  ### 4. Encryption And Decryption (in createNode.php):		
+ 	 ```
+	 function createChildNode($ownerId, $nodeValue);
+	 ```
+  ### 5. Verify owner node:
+  	```
 	  function verifyOwner($ownerId, $referenceNodeId);
-  6. Edit value of Node: 
+	```  
+  ### 6. Edit value of Node: 
+        ```
 	  function editNode($ownerId,$referenceNodeId, $newNodeValue);
-  7. Transfer ownership of particular node: 
+	```  
+  ### 7. Transfer ownership of particular node: 
+        ```
 	  function transferOwner($prevOwnerId,$newOwnerId, $referenceNodeId);
-  8. Find Longest Chain from genesis node: findLongestChain(1,$ownerId):
-  	function findLongestChain($nodeId,$referenceNodeId);
-  9. Find Longest Chain from any node:
+	```  
+  ### 8. Find Longest Chain from genesis node: findLongestChain(1,$ownerId):
+  	```
+	function findLongestChain($nodeId,$referenceNodeId);
+	```
+  ### 9. Find Longest Chain from any node:
+        ```
     	function findLongestChain($nodeId,$referenceNodeId);
-  10. Merge 2 nodes values: 
+	```
+  ### 10. Merge 2 nodes values: 
+  	```
 	function mergeNodes($referenceNodeId1, $referenceNodeId2);
+	```
 	
 
 	
