@@ -1,0 +1,18 @@
+CREATE TABLE owner (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+ownerId VARCHAR(30) NOT NULL,
+ownerName VARCHAR(300) NOT NULL,
+sum int(50),
+timestamp VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE owner (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+data VARCHAR(30) NOT NULL,
+nodeNumber VARCHAR(30) NOT NULL,
+nodeId int(50),
+referenceNodeId VARCHAR(30) NOT NULL,
+childReferenceNodeId VARCHAR(30) NOT NULL,
+genesisReferenceNodeId VARCHAR(30) NOT NULL,
+timestamp VARCHAR(30) NOT NULL
+);
